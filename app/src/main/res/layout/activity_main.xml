@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homework"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="334dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:drawableStart="@drawable/mail"
+        android:paddingVertical="10dp"
+        android:inputType="text"
+        android:hint="Email"
+        android:paddingStart="20dp"
+        android:textColor="@color/gray"
+        android:background="@drawable/ramka"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="334dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:inputType="text"
+        android:drawableStart="@drawable/theme"
+        android:drawablePadding="10dp"
+        android:paddingVertical="10dp"
+        android:paddingStart="20dp"
+        android:hint="Theme"
+        android:textColor="@color/gray"
+        android:background="@drawable/ramka"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="334dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:inputType="text"
+        android:drawableStart="@drawable/message"
+        android:drawablePadding="10dp"
+        android:paddingVertical="10dp"
+
+        android:paddingStart="20dp"
+        android:hint="Text"
+        android:textColor="@color/gray"
+        android:background="@drawable/ramka"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+    <Button
+        android:onClick="buttonSend"
+        android:textAllCaps="true"
+        android:id="@+id/button_send"
+        android:layout_width="334dp"
+        android:layout_height="62dp"
+        android:text="Send"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
